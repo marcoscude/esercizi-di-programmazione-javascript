@@ -14,3 +14,28 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n1=0;
+var n2=0;
+counter1 =0;
+counter2 =0;
+while (n1<5) {
+  var risultatodado1 = Math.floor(Math.random() * 6) + 1;
+  console.log('player uno lancia i dadi, il risultato del dado è' + risultatodado1);
+  counter1 += risultatodado1;
+  n1++;
+}
+console.log('player 1 ha totalizzato ' + counter1);
+while (n2<5) {
+  var risultatodado2 = Math.floor(Math.random() * 6) + 1;
+  console.log('player uno lancia i dadi, il risultato del dado è' + risultatodado2);
+  counter2 += risultatodado2;
+  n2++;
+}
+console.log('player 2 ha totalizzato ' + counter2);
+
+if (counter1>counter2) {
+  console.log('il vincitore è player 1');
+} else if (counter2>counter1) {
+  console.log('il vincitore è player 2');
+}

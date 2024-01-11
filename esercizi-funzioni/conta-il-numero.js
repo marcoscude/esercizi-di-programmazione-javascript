@@ -12,3 +12,17 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function counter(number) {
+  if (number < 0 || number > 9999) {
+    console.log('Il numero deve essere compreso tra 0 e 9999.');
+    return;
+  } // L'if restituisce l'eventuale errore
+
+  const numString = number.toString(); //il metodo tostring transforma il numero in stringhe
+  const numDigits = numString.length; // il metodo lenght restituisce la quantità di numeri
+
+  console.log('Il numero' + number + 'è composto da' + numDigits + ' cifre.');
+}
+
+counter(972);

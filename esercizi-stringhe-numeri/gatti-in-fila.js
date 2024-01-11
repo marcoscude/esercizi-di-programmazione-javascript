@@ -17,3 +17,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var cats = 168;
+var catsperrow = 7;
+var rows = Math.ceil(cats/catsperrow); //
+console.log('there are ' + cats + ' cats, there are ' + catsperrow + ' cats per row');
+console.log('there are ' + rows + ' rows');
+var rest = rows*catsperrow-cats;
+console.log('the rest is ' + rest);

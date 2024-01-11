@@ -8,3 +8,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = 17;
+counter = 0; /*inizializzazione*/
+
+//metodo do while//
+do {
+  console.log (n*counter) /*codice da eseguire*/
+  counter ++; /*iterazione*/
+} while (counter <=10); /*condizione*/
+
+//metodo for//
+for (var counter = 1; /*inizializzazione*/ counter <= 10;/*condizione*/ counter++/*iterazione*/) {
+  console.log(n * counter); /*codice da eseguire*/
+}

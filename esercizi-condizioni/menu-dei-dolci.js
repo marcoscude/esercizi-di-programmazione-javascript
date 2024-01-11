@@ -21,3 +21,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+console.log('i dolci dispnibili sono: tiramisu, torta della nonna, cheescake alla nutella, macedonia')
+
+var dolce = 'macedonia'
+
+if (dolce==='tiramisu') {
+    console.log('hai scelto il dolce tiramisù');
+}  else if (dolce==='torta della nonna') {
+  console.log('hai scelto il dolce torta della nonna');
+}  else if (dolce==='cheescake alla nutella') {
+  console.log('hai scelto il dolce cheescake alla nutella');
+}  else if (dolce==='macedonia') {
+  console.log('hai scelto il dolce macedonia');
+}  else {
+  console.log('dolce non dispnibile');
+}

@@ -12,3 +12,27 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function contaTempo(secondi) {
+  // Calcola le ore, i minuti e i secondi
+  var ore = Math.floor(secondi / 3600);
+  var minuti = Math.floor((secondi % 3600) / 60);
+  var restantiSecondi = secondi % 60;
+
+  // Costruisci la stringa di output
+  var risultato = "";
+  if (ore > 0) {
+    risultato += ore + " ore, ";
+  }
+  if (minuti > 0) {
+    risultato += minuti + " minuti, ";
+  }
+  risultato += restantiSecondi + " secondi.";
+
+  // Stampi il risultato
+  console.log("Input: " + secondi);
+  console.log("Output: " + risultato);
+}
+
+// Esempio di utilizzo con l'input 12560
+contaTempo(12560);

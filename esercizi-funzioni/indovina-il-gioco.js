@@ -14,3 +14,46 @@
 
   http://www.imparareaprogrammare.it
 */
+
+intero(2); //chiamata valore, do numero intero
+
+function intero(int) { 
+  if (int >= 1 && int <= 7) { /*se il valore è tra 1 e 7*/
+    giorno(int); /* chiama la funzione giorno(int)*/
+
+  } else {
+    console.log('Peccato, non posso indovinare il giorno.'); /*in alternativa stampa*/
+  }
+}
+
+// è meglio non annidare mai le funzioni per leggibilità ed accessibilità //
+
+function giorno(int) { /* funzioen giorno(int)*/
+switch (int) {
+  case 1:
+    console.log('lunedi');
+    break;
+  case 2:
+    console.log('martedi');
+    break;
+  case 3:
+    console.log('mercoledi');
+    break;
+  case 4:
+    console.log('giovedi');
+    break;
+  case 5:
+    console.log('venerdi');
+    break;
+  case 6:
+    console.log('sabato');
+    break;
+  case 7:
+    console.log('domenica');
+    break;
+  default:
+    break;
+}
+}
+
+

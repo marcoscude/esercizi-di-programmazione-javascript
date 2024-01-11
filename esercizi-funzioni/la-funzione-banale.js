@@ -16,3 +16,9 @@
     
   http://www.imparareaprogrammare.it
 */
+
+function /*sintassi*/sonoUguali/*nome funzione*/(arg1,arg2)/*argomenti*/ {
+  return/*sintassi, cosa restituirà la funzione*/ arg1===arg2/*confronto tra argomenti*/;
+}
+
+console.log(sonoUguali/*chiamata della funzione*/(2,3)/*valore da attribuire ai due argomenti*/);

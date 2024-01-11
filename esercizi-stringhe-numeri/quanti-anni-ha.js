@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var currentdate = new Date();
+var currentyear = currentdate.getFullYear();
+var bornyear = 1994;
+var yearsold = currentyear-bornyear;
+var until100 = 100-yearsold;
+
+console.log('we are currently in year ' + currentyear + ', Marco is born in ' + bornyear + ' and is ' + yearsold + ' years old.');
+console.log('In ' + until100 + ' years, Marco will be 100 years old.')

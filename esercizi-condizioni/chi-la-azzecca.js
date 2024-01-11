@@ -19,3 +19,25 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var play1 = 52;
+var play2 = 78;
+var casualnumber = Math.floor(Math.random() * (100-1) + 1); // la funziona math.floor arrotonda, math.random genera un numero da 0 a 1
+var distanza1 = Math.abs(casualnumber - play1); // math.abs restituisce un valore assoluto
+var distanza2 = Math.abs(casualnumber - play2);
+
+// dichiarazioni //
+console.log('il giocatore 1 ha giocato il numero' + play1);
+console.log('il giocatore 2 ha giocato il numero' + play2);
+console.log('il numero casuale generato è' + casualnumber);
+
+//condizioni//
+if (casualnumber===play1) {
+  console.log('il giocatore 1 ha indovinato il numero');
+} else if (casualnumber===play2) {
+  console.log('il giocatore 2 ha indovinato il numero');
+} else if (distanza1<distanza2) {
+  console.log('nessuno dei due giocatori ha indovinato, ma il giocatore 1 si è avvicinato di più')
+} else if (distanza1>distanza2) {
+  console.log('nessuno dei due giocatori ha indovinato, ma il giocatore 2 si è avvicinato di più')
+}

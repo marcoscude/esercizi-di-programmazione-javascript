@@ -15,3 +15,30 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function distanza (a,b,n) {
+if ((Math.abs(n-a))>(Math.abs(n-b))) {
+console.log('N è più vicino a B')
+} else if  ((Math.abs(n-a))<(Math.abs(n-b))) {
+console.log('N è più vicino ad A');
+} else if ((Math.abs(n-a))===(Math.abs(n-b))) {
+  console.log('N è equidistante');
+}
+}
+
+distanza(4,7,2);
+
+function distance(a, b, n) {
+  const distA = Math.abs(n - a);
+  const distB = Math.abs(n - b);
+
+  if (distA > distB) {
+    console.log('N è più vicino a B');
+  } else if (distA < distB) {
+    console.log('N è più vicino ad A');
+  } else {
+    console.log('N è equidistante');
+  }
+}
+
+distance(4,7,2);
