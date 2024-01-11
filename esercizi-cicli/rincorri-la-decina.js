@@ -27,4 +27,5 @@ do {
   console.log(n+1,n+2,n+3,n+4,n+5,n+6,n+7,n+8,n+9,n+10); // stampa 10 numeri
   n+=10; // incrementa il valore di n di 10
 } while (n <=100); // ripeti il ciclo fin quando vale non vale 100
-  
+
+//moooolto bene
